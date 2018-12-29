@@ -1,2 +1,2 @@
 # THE-TO-DO-LIST
-jQuery Based To-Do List Application
+This is a very basic to-do list app in jQuery, inspired by a online tutorial i saw.

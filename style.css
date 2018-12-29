@@ -1,0 +1,100 @@
+*{
+  font-family : 'Ubuntu', sans-serif;
+}
+
+h1{
+  background-color : #3c7;
+  color : white;
+  margin : 0;
+  padding : 0.2em;
+  font-weight : normal;
+  font-size : 3em;
+}
+h1 i{
+  float : right;
+  margin-top : 0.15em;
+  transition : 0.25s linear;
+}
+
+h1 i:hover{
+  display : inline-block;
+  box-shadow : 0.05em 0.05em 0.05em #6fa , -0.05em -0.05em 0.05em #6fa;
+  border : none;
+}
+
+input{
+  box-sizing : border-box;
+  width : 100%;
+  font-size : 2em;
+  padding : .5em .5em; 
+  overflow : hidden;
+}
+
+input:focus{
+  border : none;
+  box-shadow : 0.05em 0.05em 0.1em #3c7;
+}
+
+#main-container{
+  width : 50%;
+  margin : 5% auto;
+  background-color :rgb(51,204,119);
+  box-shadow : 0 0 0.25em rgba(51,204,119,0.5);
+}
+
+ul{
+  list-style : none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  min-height : 2.5em;
+  line-height : 2.5em;
+  font-size : 2em;
+  height : auto;
+  word-wrap : break-word;
+}
+
+li:nth-child(2n+1){
+  background-color : #fff;
+}
+
+span{
+  color : white;
+  background-color : #f65a3c;
+  text-align : center;
+  margin-right : 0.5em; 
+  width : 0;
+  display : inline-block;
+  opacity : 0;
+  transition : 0.15s linear;
+}
+
+li:hover span {
+  width : 2em;
+  opacity : 1;
+  
+}
+
+.done{
+  color : gray;
+  text-decoration : line-through;
+}
+
+@media only screen and (max-width : 420px) {
+  #main-container{
+    width : 80%;
+    
+  }
+  li{
+    font-size : 1.5em;
+  }
+  h1{
+    font-size : 2.5em;
+  }
+  input{
+    font-size : 1.5em;
+  }
+
+}
